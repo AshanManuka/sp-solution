@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class ProblemTwo {
+    public static void main(String[] args) {
+        List<Object> listOne = new ArrayList<>();
+        List<Object> listTwo = new ArrayList<>();
+        List<Object> finalList = new ArrayList<>();
+                
+        listOne.add(1);
+        listOne.add(2);
+        listOne.add(3);
+        listTwo.add("a");
+        listTwo.add("b");
+        listTwo.add("c");
+        
+         for (int i = 0; i < listOne.size(); i++) {
+            finalList.add(listOne.get(i)); 
+            finalList.add(listTwo.get(i));  
+        }
+
+
+        System.out.println(finalList);
+    }
+}

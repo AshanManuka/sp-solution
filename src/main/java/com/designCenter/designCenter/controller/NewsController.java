@@ -50,7 +50,7 @@ public class NewsController {
         return ResponseEntity.ok(new CommonResponse<>(true,newsResponse));
     }
 
-    @PostMapping(value = "/save-news")
+    @PostMapping(value = "/save-comment")
     public ResponseEntity<?> saveComment(@RequestParam String comment, @RequestParam int newsId) throws IOException {
         log.info("Getting request for new comment");
         String commentRes = newsService.saveComment(comment, newsId);
